@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Kuliner</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Tambah Kuliner</h2>
+      <form id="formKuliner">
+        <label for="namaMakanan">Nama Makanan:</label>
+        <input type="text" id="namaMakanan" name="namaMakanan" required />
+
+        <label for="gambarMakanan">Gambar Makanan:</label>
+        <input
+          type="file"
+          id="gambarMakanan"
+          name="gambarMakanan"
+          accept="image/*"
+          required
+        />
+
+        <label for="deskripsiMakanan">Deskripsi Makanan:</label>
+        <textarea
+          id="deskripsiMakanan"
+          name="deskripsiMakanan"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </div>
+
+    <script>
+      // Event listener untuk form submission
+      document
+        .getElementById("formKuliner")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Data kuliner berhasil disimpan!");
+          // Di sini Anda dapat menambahkan logika untuk mengirim data ke server atau menyimpannya di tempat lain
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Registrasi Pengguna/Admin</title>
+    <link rel="stylesheet" href="assets/style_reg.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Registrasi Akun</h1>
+    </header>
+    <section class="form-container">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <!-- Nama Lengkap -->
+        <label for="name">Nama Lengkap:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Masukkan nama lengkap"
+          required
+        />
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Masukkan email"
+          required
+        />
+        <!-- Username -->
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Buat username"
+          required
+        />
+        <!-- Password -->
+        <label for="password">Kata Sandi:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Masukkan kata sandi"
+          required
+        />
+        <!-- Jenis Kelamin -->
+        <label for="gender">Jenis Kelamin:</label>
+        <select id="gender" name="gender">
+          <option value="laki-laki">Laki-laki</option>
+          <option value="perempuan">Perempuan</option>
+        </select>
+        <!-- Tanggal Lahir -->
+        <label for="tanggal">Tanggal Lahir:</label>
+        <input type="date" id="tanggal" name="tanggal" />
+        <!-- Upload File (Foto Profil) -->
+        <label for="photo">Unggah Foto Profil:</label>
+        <input type="file" id="photo" name="photo" />
+        <!-- Submit Button -->
+        <input type="submit" value="DAFTAR" />
+      </form>
+    </section>
+  </body>
+</html>
